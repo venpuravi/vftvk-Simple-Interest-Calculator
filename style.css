@@ -1,4 +1,28 @@
-body {background-color:tan;}
-h1{color:green;}
-
+body {background-color:black;font-family:arial;color:white}
+h1{color:grey;font-family:verdana}
+.maindiv{
+    background-color:white;
+    color:black;
+    width:500px;
+    margin:auto;
+    border-radius:25px;
+    padding: 20px;
+}
+.left{
+    float:left;
+    width:100px;
+    
+}
+.right{
+    float:right;
+    width:100px;
+    
+}
+.label{
+    width:140px;
+    display:inline-block;
+}
+.calculator{
+    margin-left: 80px
+}
 

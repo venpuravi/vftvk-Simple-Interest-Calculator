@@ -8,11 +8,19 @@
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range"  id="rate" min="minval" max="maxval" value="default_val">
-        <span id = "rate_val">10.25%</span>  <br/>
-        No. of Years <select  id="years">
+            <div class="calculator">
+            <div>
+                 <label class="label"  for="principal">Amount : </label>
+                 <input type="number"  name = "principal" id="principal">
+            </div>
+            <div>
+                <label class="label" for="rate" >Interest Rate: </label>
+                <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25">
+                <span id = "rate_val">10.25%</span> 
+            </div>
+            <div>
+                <label class="label" for="years">No. of years</label>
+                <select  id="years" name="years">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -23,17 +31,24 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-            </select>  <br/>
-        Interest : <span id="result"></span><br>
+            </select> 
+            </div>
 
+
+        </br>
         <button onclick="compute()">Compute Interest</button>
         <span id = "result">
 
         </span>
         </div>
-       <footer>
+    </br>
+        </br>
+
+         <footer>
          &#169; This Calculator belongs to --your name--
     </footer>
+        </div>
+      
     </body>
     
 </html>
