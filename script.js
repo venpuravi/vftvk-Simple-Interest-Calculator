@@ -9,7 +9,13 @@ function compute()
     var interest = principal*years*rate/100;
     var mature=+principal + +interest; 
     var year = new Date().getFullYear()+parseInt(years);
-    document.getElementById("result").innerText="If you deposit "+principal+",\nat an interest rate of "+rate+"%.\nYou will receive an amount of "+interest+",\nin the year "+year;    
+
+    document.getElementById("pdisplay").innerText = principal;
+    document.getElementById("rdisplay").innerText = rate;
+    document.getElementById("idisplay").innerText = interest;
+    document.getElementById("ydisplay").innerText = year;
+
+    document.getElementById("result").style.visibility="visible";
 }
 
 
@@ -28,5 +34,6 @@ function checkInputValidity(){ // function to check principal amount to be empty
     }
     return true;
 }
+
 
         

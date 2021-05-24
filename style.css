@@ -25,4 +25,10 @@ h1{color:grey;font-family:verdana}
 .calculator{
     margin-left: 80px
 }
+#result{
+    visibility:hidden;
+}
+.resultText{
+    background-color:yellow;
+}
 
